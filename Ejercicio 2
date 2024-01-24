@@ -1,3 +1,22 @@
+
+git  config --global user.name "[Katherin]
+
+git config --global user.email "[katherincruz@outlook.es]"
+
+git config --global color.ui auto
+
+git init 
+
+git clone
+
+https://github.com/asalber/libro-git.git
+
+cd libro-git
+
+git reset --hard 8c808
+
+git remote remove origin
+
 Ejercicio 1
 
 git log
@@ -20,7 +39,7 @@ git add .
 
 git commit -m "Añadido el capitulo 2"
 
-git log
+git diff HEAD~2..HEAD
 
 Ejercicio 3
 
@@ -40,4 +59,4 @@ echo "Capitulo 5: Conceptos avanzados" > indice.txt
 
 git commit -m "Añadido el capitulo 5 al Índice"
 
-git log indice.txt
+git annotate indice.txt
