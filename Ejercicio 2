@@ -1,4 +1,3 @@
-
 git  config --global user.name "[Katherin]
 
 git config --global user.email "[katherincruz@outlook.es]"
@@ -23,6 +22,8 @@ git log
 
 mkdir capitulos
 
+cd capitulos
+
 echo "Git es un sistema de control de versiones ideado por Linus Torvalds" > capitulos1.txt
 
 git add capitulos/capitulos1.txt
@@ -33,7 +34,7 @@ git log
 
 Ejercicio 2
 
-echo "El flujo de trabajo  básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal.\n 3- Hacer un commit de los cambios" > capitulo2.txt
+echo "El flujo de trabajo  básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios" > capitulo2.txt
 
 git add .
 
@@ -55,7 +56,11 @@ git diff b6be c95b
 
 Ejercicio 4
 
+cd ..
+
 echo "Capitulo 5: Conceptos avanzados" > indice.txt
+
+git add .
 
 git commit -m "Añadido el capitulo 5 al Índice"
 
