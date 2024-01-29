@@ -1,1 +1,75 @@
+git config --global user.email "katherincruz@outlook.es"	
+
+git config --global user.namel "katherin"
+
+
+	Ejercicio 1
+
+git branch bibliografia
+
+git branch -av
+
+	Ejercicio 2
+
+cd capitulos
+
+echo capitulo nuevo de prueba > capitulo4.txt
+
+git add .
+
+git commit -m "Añadido capítulo 4"
+
+git log --graph --all --oneline
+
+	Ejercicio 3
+
+git checkout bibliografía
+
+echo Chacon, S. and Straud, B. Pro Git. Apress. > bibliofrafia.txt
+
+git add .
+
+git commit -m "Añadida primera referencia bibliográfica"
+
+git log --graph --all --oneline
+
+	Ejercicio 4
+
+git checkout master
+
+git merge bibliografía
+
+git log --graph --all --oneline
+
+git branch -d bibliografía
+
+git log --graph --all --oneline
+
+	Ejercicio 5
+
+git branch bibliografía
+
+git checkout bibliografía
+
+echo -Scott Chacon and Ben Straub. Pro Git. Apress. -Ryan Hodson. Ry's Git Tutorial. Smashwords (2014). > bibliografia.txt
+
+git add .
+
+git commit -m "Añadida nueva referencia bibliográfica"
+
+git checkout master
+
+echo Chacon, S. and Straub; B. Pro Git. Apress. > bibliografia.txt
+
+git add .
+
+git commit -m "Añadida nueva referencia bibliografica"
+
+git merge bibliografía
+
+git add .
+
+git commit -a -m "Solucionado conflicto bibliografia"
+
+git log --graph --all --oneline
 
